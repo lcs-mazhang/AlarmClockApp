@@ -10,17 +10,8 @@ import SwiftUI
 struct AlarmClockApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
                 LandingView()
-                .tabItem {
-                    Label("Alarm", systemImage: "alarm")
-                }
                 
-                .tabItem {
-                    Label ("Puzzle", systemImage: "puzzlepiece")
-                }
-                    
-                }
         }
     }
 }

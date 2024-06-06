@@ -9,7 +9,28 @@ import SwiftUI
 
 struct LandingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView {
+            
+            AlarmView()
+            .tabItem {
+                Image(systemName: "alarm")
+                Text("Reviews")
+            }
+            
+            PuzzleView()
+            .tabItem {
+                Image(systemName:"puzzlepiece.extension")
+                Text("puzzle")
+            }
+            
+            SettingView()
+            .tabItem {
+                Image(systemName: "gear")
+                Text("Setting")
+            }
+                
+            }
     }
 }
 

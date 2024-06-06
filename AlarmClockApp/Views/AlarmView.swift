@@ -9,7 +9,16 @@ import SwiftUI
 
 struct AlarmView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack{
+                List{
+                    Text("6:30")
+                    Text("9:30")
+                }
+                .listStyle(.plain)
+            }
+                .navigationTitle("Alarm")
+        }
     }
 }
 

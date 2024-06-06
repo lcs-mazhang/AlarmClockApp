@@ -12,6 +12,8 @@
 		DFA762D52C0A595600CA83D1 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762D42C0A595600CA83D1 /* AlarmClockApp.swift */; };
 		DFA762D72C0A59A200CA83D1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762D62C0A59A200CA83D1 /* LandingView.swift */; };
 		DFAEB02F2C120936003E6B32 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAEB02E2C120936003E6B32 /* PuzzleView.swift */; };
+		DFAEB0372C121254003E6B32 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAEB0362C121254003E6B32 /* AlarmView.swift */; };
+		DFAEB0392C1213C0003E6B32 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAEB0382C1213C0003E6B32 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		DFA762D42C0A595600CA83D1 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
 		DFA762D62C0A59A200CA83D1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		DFAEB02E2C120936003E6B32 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		DFAEB0362C121254003E6B32 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		DFAEB0382C1213C0003E6B32 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			children = (
 				DFA762D62C0A59A200CA83D1 /* LandingView.swift */,
 				DFAEB02E2C120936003E6B32 /* PuzzleView.swift */,
+				DFAEB0362C121254003E6B32 /* AlarmView.swift */,
+				DFAEB0382C1213C0003E6B32 /* SettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA762D72C0A59A200CA83D1 /* LandingView.swift in Sources */,
+				DFAEB0392C1213C0003E6B32 /* SettingView.swift in Sources */,
 				DFA762D52C0A595600CA83D1 /* AlarmClockApp.swift in Sources */,
+				DFAEB0372C121254003E6B32 /* AlarmView.swift in Sources */,
 				DFAEB02F2C120936003E6B32 /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
