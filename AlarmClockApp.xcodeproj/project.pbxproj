@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFA762C12C0A56DE00CA83D1 /* AlarmClockAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762C02C0A56DE00CA83D1 /* AlarmClockAppApp.swift */; };
-		DFA762C32C0A56DE00CA83D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762C22C0A56DE00CA83D1 /* ContentView.swift */; };
 		DFA762C52C0A56E000CA83D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA762C42C0A56E000CA83D1 /* Assets.xcassets */; };
 		DFA762C82C0A56E000CA83D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA762C72C0A56E000CA83D1 /* Preview Assets.xcassets */; };
+		DFA762D52C0A595600CA83D1 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762D42C0A595600CA83D1 /* AlarmClockApp.swift */; };
+		DFA762D72C0A59A200CA83D1 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA762D62C0A59A200CA83D1 /* LandingView.swift */; };
+		DFAEB02F2C120936003E6B32 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAEB02E2C120936003E6B32 /* PuzzleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DFA762BD2C0A56DE00CA83D1 /* AlarmClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFA762C02C0A56DE00CA83D1 /* AlarmClockAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockAppApp.swift; sourceTree = "<group>"; };
-		DFA762C22C0A56DE00CA83D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFA762C42C0A56E000CA83D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA762C72C0A56E000CA83D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFA762D42C0A595600CA83D1 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
+		DFA762D62C0A59A200CA83D1 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		DFAEB02E2C120936003E6B32 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		DFA762BF2C0A56DE00CA83D1 /* AlarmClockApp */ = {
 			isa = PBXGroup;
 			children = (
-				DFA762C02C0A56DE00CA83D1 /* AlarmClockAppApp.swift */,
-				DFA762C22C0A56DE00CA83D1 /* ContentView.swift */,
+				DFA762D42C0A595600CA83D1 /* AlarmClockApp.swift */,
+				DFA762CF2C0A57B100CA83D1 /* Model */,
+				DFA762CE2C0A579800CA83D1 /* Views */,
 				DFA762C42C0A56E000CA83D1 /* Assets.xcassets */,
 				DFA762C62C0A56E000CA83D1 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				DFA762C72C0A56E000CA83D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFA762CE2C0A579800CA83D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFA762D62C0A59A200CA83D1 /* LandingView.swift */,
+				DFAEB02E2C120936003E6B32 /* PuzzleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFA762CF2C0A57B100CA83D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +118,7 @@
 				TargetAttributes = {
 					DFA762BC2C0A56DE00CA83D1 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -137,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA762C32C0A56DE00CA83D1 /* ContentView.swift in Sources */,
-				DFA762C12C0A56DE00CA83D1 /* AlarmClockAppApp.swift in Sources */,
+				DFA762D72C0A59A200CA83D1 /* LandingView.swift in Sources */,
+				DFA762D52C0A595600CA83D1 /* AlarmClockApp.swift in Sources */,
+				DFAEB02F2C120936003E6B32 /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClockApp/Preview Content\"";
@@ -288,6 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.matthewzhang.AlarmClockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClockApp/Preview Content\"";
